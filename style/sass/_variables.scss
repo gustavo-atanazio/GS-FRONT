@@ -1,0 +1,33 @@
+// COLORS
+$default-color: #FFF;
+$primary-color: #228B22;
+$terciary-color: #006400;
+
+// TEXT SIZES
+$title-mobile: 2.5rem;
+$title-desktop: 3.5rem;
+
+$subtitle-mobile: 2rem;
+$subtitle-mobile-2: 1.5rem;
+
+$small-text-mobile: 0.5rem;
+
+$link-mobile: 1.125rem;
+
+// TEXT WEIGHTS
+$medium-weight: 500;
+
+// SPACINGS
+$default-margin-mobile: 30px 0;
+$default-padding-mobile: 0 15px;
+$default-padding-desktop: 0 150px;
+
+// OTHERS
+$border-radius-mobile: 10px;
+
+// MIXINS
+@mixin desktop {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
