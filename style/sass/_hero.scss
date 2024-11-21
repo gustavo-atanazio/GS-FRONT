@@ -1,0 +1,54 @@
+@import 'variables.scss';
+
+#hero {
+  margin: $default-margin-mobile;
+
+  .container-fluid {
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+        text-align: center;
+        font-size: $title-mobile;
+      }
+  
+      button {
+        border: none;
+        outline: 0;
+        background-color: $primary-color;
+        color: $default-color;
+        margin-bottom: 20px;
+        padding: 5.5px 10px;
+        border-radius: 5px;
+      }
+    }
+    
+    img {
+      width: 100%;
+      border-radius: $border-radius-mobile;
+    }
+  }
+
+  @include desktop {
+    .container-fluid {
+      display: flex;
+      padding: 0;
+
+      div {
+        justify-content: space-around;
+        align-items: unset;
+
+        h1 {
+          text-align: start;
+          font-size: $title-desktop;
+        }
+  
+        button { align-self: flex-start; }
+      }
+
+      img { width: 50%; }
+    }
+  }
+}
