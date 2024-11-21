@@ -1,0 +1,88 @@
+@import 'variables.scss';
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 25px 15px;
+  background-color: $terciary-color;
+  color: $default-color;
+
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    label { font-size: 1.025rem; }
+
+    div {
+      padding: 5px;
+      background-color: $default-color;
+      border-radius: 5px;
+
+      input, button {
+        border: none;
+        outline: 0;
+      }
+
+      button {
+        background-color: $primary-color;
+        color: $default-color;
+        padding: 5px;
+        border-radius: 2.5px;
+      }
+    }
+  }
+
+  .pages, .media {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      a {
+        text-decoration: none;
+        font-size: $link-mobile;
+        color: $default-color;
+      }
+    }
+  }
+
+  .pages {
+    ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      column-gap: 45px;
+      row-gap: 5px;
+    }
+  }
+
+  .media {
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 25px;
+    }
+  }
+
+  .info {
+    display: flex;
+    gap: 20px;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      span { font-size: $small-text-mobile; }
+    }
+  }
+
+  & > span {
+    font-size: $subtitle-mobile-2;
+    font-weight: $medium-weight;
+  }
+}
