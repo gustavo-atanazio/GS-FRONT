@@ -1,0 +1,21 @@
+@import 'header.scss';
+@import 'hero.scss';
+@import 'footer.scss';
+@import 'variables.scss';
+
+html { scroll-behavior: smooth; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  padding: $default-padding-mobile;
+
+  @include desktop { padding: $default-padding-desktop; }
+}
+
+// node-sass --watch style/sass/main.scss --output style/css compressed

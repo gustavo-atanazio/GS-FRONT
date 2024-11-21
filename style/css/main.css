@@ -24,8 +24,9 @@
     padding: 5px 0;
     color: #FFF; }
   #header .navbar-collapse {
-    padding: 0 1.5rem 10px;
-    background-color: #FFF; }
+    padding: 0 1.5rem;
+    background-color: #FFF;
+    border-bottom: 1px solid #228B22; }
   #header i {
     font-size: 2rem; }
   @media only screen and (min-width: 768px) {
@@ -34,20 +35,123 @@
       #header .container-fluid {
         justify-content: unset; }
       #header .navbar-collapse {
+        justify-content: flex-end;
         gap: 25px;
         padding: 0;
         background-color: transparent; }
         #header .navbar-collapse .navbar-nav {
           gap: 25px;
-          margin: 0; }
+          margin: 0 !important; }
           #header .navbar-collapse .navbar-nav .nav-link {
             color: #FFF; }
         #header .navbar-collapse .btn-outline-success {
           border: 1.5px solid #FFF;
           color: #FFF; } }
 
+#hero {
+  margin: 30px 0; }
+  #hero .container-fluid div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #hero .container-fluid div h1 {
+      text-align: center;
+      font-size: 2.5rem; }
+    #hero .container-fluid div button {
+      border: none;
+      outline: 0;
+      background-color: #228B22;
+      color: #FFF;
+      margin-bottom: 20px;
+      padding: 5.5px 10px;
+      border-radius: 5px; }
+  #hero .container-fluid img {
+    width: 100%;
+    border-radius: 10px; }
+  @media only screen and (min-width: 768px) {
+    #hero .container-fluid {
+      display: flex;
+      padding: 0; }
+      #hero .container-fluid div {
+        justify-content: space-around;
+        align-items: unset; }
+        #hero .container-fluid div h1 {
+          text-align: start;
+          font-size: 3.5rem; }
+        #hero .container-fluid div button {
+          align-self: flex-start; }
+      #hero .container-fluid img {
+        width: 50%; } }
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 25px 15px;
+  background-color: #006400;
+  color: #FFF; }
+  #footer .newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; }
+    #footer .newsletter label {
+      font-size: 1.025rem; }
+    #footer .newsletter div {
+      padding: 5px;
+      background-color: #FFF;
+      border-radius: 5px; }
+      #footer .newsletter div input, #footer .newsletter div button {
+        border: none;
+        outline: 0; }
+      #footer .newsletter div button {
+        background-color: #228B22;
+        color: #FFF;
+        padding: 5px;
+        border-radius: 2.5px; }
+  #footer .pages ul, #footer .media ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    #footer .pages ul a, #footer .media ul a {
+      text-decoration: none;
+      font-size: 1.125rem;
+      color: #FFF; }
+  #footer .pages ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 45px;
+    row-gap: 5px; }
+  #footer .media ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px; }
+  #footer .info {
+    display: flex;
+    gap: 20px; }
+    #footer .info div {
+      display: flex;
+      align-items: center;
+      gap: 5px; }
+      #footer .info div span {
+        font-size: 0.5rem; }
+  #footer > span {
+    font-size: 1.5rem;
+    font-weight: 500; }
+
+html {
+  scroll-behavior: smooth; }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif; }
+
+main {
+  padding: 0 15px; }
+  @media only screen and (min-width: 768px) {
+    main {
+      padding: 0 150px; } }
