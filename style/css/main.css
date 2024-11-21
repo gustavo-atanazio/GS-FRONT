@@ -1,0 +1,53 @@
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  background-color: #228B22; }
+  #header .container-fluid {
+    justify-content: space-around;
+    padding-top: 8px;
+    padding-bottom: 8px; }
+  #header #menu-toggle {
+    border: none;
+    outline: 0;
+    box-shadow: none; }
+    #header #menu-toggle i {
+      width: 28px;
+      height: 32px;
+      color: #FFF; }
+  #header .navbar-brand h1 {
+    margin: 0;
+    padding: 5px 0;
+    color: #FFF; }
+  #header .navbar-collapse {
+    padding: 0 1.5rem 10px;
+    background-color: #FFF; }
+  #header i {
+    font-size: 2rem; }
+  @media only screen and (min-width: 768px) {
+    #header {
+      padding: 0 15px; }
+      #header .container-fluid {
+        justify-content: unset; }
+      #header .navbar-collapse {
+        gap: 25px;
+        padding: 0;
+        background-color: transparent; }
+        #header .navbar-collapse .navbar-nav {
+          gap: 25px;
+          margin: 0; }
+          #header .navbar-collapse .navbar-nav .nav-link {
+            color: #FFF; }
+        #header .navbar-collapse .btn-outline-success {
+          border: 1.5px solid #FFF;
+          color: #FFF; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; }
