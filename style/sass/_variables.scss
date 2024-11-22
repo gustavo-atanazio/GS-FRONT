@@ -1,14 +1,26 @@
 // COLORS
 $default-color: #FFF;
 $primary-color: #228B22;
+$secondary-color: #32CD32;
 $terciary-color: #006400;
+$neutral-1: #F5F5F5;
+$neutral-2: #CEC9C9;
+$neutral-3: #333333;
 
 // TEXT SIZES
 $title-mobile: 2.5rem;
 $title-desktop: 3.5rem;
 
 $subtitle-mobile: 2rem;
+$subtitle-desktop: 2.5rem;
+
 $subtitle-mobile-2: 1.5rem;
+
+$text-mobile: 0.825rem;
+$text-desktop: 1.025rem;
+
+$medium-text-mobile: 0.625rem;
+$medium-text-desktop: 0.825rem;
 
 $small-text-mobile: 0.5rem;
 
@@ -18,7 +30,9 @@ $link-mobile: 1.125rem;
 $medium-weight: 500;
 
 // SPACINGS
-$default-margin-mobile: 30px 0;
+$default-margin-mobile: 45px 0;
+$default-margin-desktop: 90px 0;
+
 $default-padding-mobile: 0 15px;
 $default-padding-desktop: 0 150px;
 
