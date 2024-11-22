@@ -165,6 +165,8 @@
         height: 250px;
         object-fit: cover;
         border-radius: 10px; }
+      #section2 #section2-carousel .carousel-inner .carousel-item div p {
+        text-align: center; }
   #section2 .desktop-info {
     display: none; }
   @media only screen and (min-width: 768px) {
