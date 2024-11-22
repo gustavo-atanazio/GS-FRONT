@@ -1,0 +1,71 @@
+@import 'variables.scss';
+
+#section3 {
+  display: flex;
+  flex-direction: column;
+  margin: $default-margin-mobile;
+
+  .text {
+    text-align: center;
+
+    h2 { font-size: $subtitle-mobile; }
+    p { font-size: $text-mobile; }
+  }
+
+  .infos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    & > div {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      padding: 15px 20px;
+      background-color: $neutral-2;
+      border-radius: $border-radius-mobile;
+
+      &:nth-child(2) {
+        background-color: $primary-color;
+        color: $default-color;
+
+        i { color: $neutral-3; }
+      }
+
+      i {
+        zoom: 3;
+        color: $neutral-3;
+      }
+
+      p {
+        font-size: $text-mobile;
+        margin: 0;
+      }
+    }
+  }
+
+  @include desktop {
+    flex-direction: row;
+    align-items: center;
+    gap: 75px;
+    margin: $default-margin-desktop;
+
+    .text {
+      width: fit-content;
+      text-align: start;
+
+      h2 {
+        font-size: $subtitle-desktop;
+        margin-bottom: 1.5rem;
+      }
+
+      p { font-size: $text-desktop; }
+    }
+
+    .infos {
+      & > div {
+        &:nth-child(2) { margin-left: -50px; }
+      }
+    }
+  }
+}
